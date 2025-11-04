@@ -6,27 +6,35 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Titulo</title>
 </head>
-<body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./pages/galeria.html">Galeria</a></li>
-            <li><a href="./pages/calendario.html">Calendario</a></li>
-            <li><a href="./pages/historia.html">Historia</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <section>
-            <article>
+<body class="page">
+    <header class="page__header header">
+      <div class="header__logo logoh"> <img src="./assets/colapinto_logo.png" alt="logo-colapinto">  </div>
 
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="./pages/galeria.html" class="nav__link">Galería</a></li>
+                <li class="nav__item"><a href="./pages/calendario.html" class="nav__link">Calendario</a></li>
+                <li class="nav__item"><a href="./pages/historia.html" class="nav__link">Historia</a></li>
+            </ul>
+        </nav>
+        <ul class="header__contactos contactos">
+            <li class="header__item"><a class="header__link" href="https://www.instagram.com/francolapinto/?hl=es" target="_blank">   <img src="./assets/Instagram_Glyph_White.png" alt="instagram"  >   </a></li>
+            <li class="header__item"><a class="header__link" href="https://www.facebook.com/francolapinto/?locale=es_LA" target="_blank">   <img src="./assets/Facebook_Logo_Secondary.png" alt="facebook" >   </a></li>
+            <li class="header__item"><a class="header__link" href="https://x.com/FranColapinto" target="_blank">   <img src="./assets/logo-white.png" alt="X" >   </a></li>
+        </ul>
+    </header>
+
+    <main class="page__main main">
+        <section class="main__section section">
+            <article class="section__article article">
+             
             </article>
         </section>
     </main>
 
-    <footer>
-        <p>Derechos Reservados</p>
+    <footer class="page__footer footer">
+        <p class="footer__text">Derechos Reservados</p>
     </footer>
 </body>
 </html>
