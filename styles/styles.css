@@ -7,10 +7,16 @@
 }
 
 .page{
-    display: grid;
+      display: grid;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.668)),
+    url(../assets/colapinto-imola.jpeg);
+    background-size: cover;
+    background-position: center;
+  background-attachment: fixed;
     min-height: 100vh;
     grid-template-columns:1fr;
-    grid-template-rows: 1fr 30fr 2fr;
+    grid-template-rows: 5px 8fr 1fr;
     grid-template-areas: 
     "header"
     "main"
@@ -18,11 +24,12 @@
 }
 
 .page__header{
-    background-color: rgba(68, 66, 66, 0.824);
+    background-color: rgba(49, 49, 49, 0.129);
     grid-area: header;
     display: grid;
     grid-template-columns: 4fr 10fr 4fr;
     grid-template-areas: "logo nav contactos";
+    z-index: 10;
 }
 
 .header__logo{
@@ -32,7 +39,6 @@
 }
 
 .header__logo img{
-    
     width: 90px;
 }
 
@@ -49,7 +55,6 @@ align-items: center;
 .nav__list a{
     font-size: 1.2rem;
     color: aliceblue;
-    
 }
 
 .header__contactos {
@@ -70,18 +75,36 @@ text-decoration: none;
 
 }
 
-.page__main{
-     background-color: rgb(73, 72, 70);
-     grid-area: main;
-   
+
+.main__section {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.section__article h2{
+    color: rgba(41, 41, 239, 0.813);
+    font-size: 7rem;
+}
+.section__article h3{
+    color: rgb(243, 77, 188);
+    font-size: 3rem;
 }
 
 
 .page__footer{
-  background-color: rgb(98, 236, 118);
+    
    grid-area: footer;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+.footer__text {
+    color: rgba(240, 248, 255, 0.672);
+}
+
 
 
 
