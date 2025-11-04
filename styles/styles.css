@@ -106,8 +106,90 @@ text-decoration: none;
 }
 
 
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+
+ 
+}
+
+.contenedor__card {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background-color: rgba(17, 17, 17, 0.684);
+  border-radius: 10px;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card__descarga {
+  color: rgba(255, 214, 246, 0.786);
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+ 
+}
 
 
 
 
 
+.article--1 {
+  max-width: 900px;
+  background: rgba(64, 64, 64, 0.427);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+  padding: 28px;
+}
+
+
+.article--1 p {
+color: rgba(239, 241, 243, 0.945);
+font-size: 1.2rem;
+}
+
+
+
+.article {
+  margin-top: 90px;
+  max-width: 90px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+  padding: 30px;
+  max-width: 900px;
+ 
+}
+
+.circuito {
+  display: grid;
+  grid-template-columns: repeat(2, auto);  
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.circuito__img {
+    width: 300px;
+    height: 200px;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.circuito__texto {
+  color: white;
+  font-size: 1.1rem;
+}
